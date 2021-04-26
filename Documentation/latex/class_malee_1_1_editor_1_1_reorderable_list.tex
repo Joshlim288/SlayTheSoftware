@@ -1,0 +1,267 @@
+\hypertarget{class_malee_1_1_editor_1_1_reorderable_list}{}\doxysection{Malee.\+Editor.\+Reorderable\+List Class Reference}
+\label{class_malee_1_1_editor_1_1_reorderable_list}\index{Malee.Editor.ReorderableList@{Malee.Editor.ReorderableList}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_malee_1_1_editor_1_1_reorderable_list_1_1_surrogate}{Surrogate}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a6b8f71e6d8da41a00793e5512f57d25f}\label{class_malee_1_1_editor_1_1_reorderable_list_a6b8f71e6d8da41a00793e5512f57d25f}} 
+enum class {\bfseries Element\+Display\+Type} \{ {\bfseries Auto}
+, {\bfseries Expandable}
+, {\bfseries Single\+Line}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_acbe1931c8d99e9b903f83653188f9551}\label{class_malee_1_1_editor_1_1_reorderable_list_acbe1931c8d99e9b903f83653188f9551}} 
+delegate void {\bfseries Draw\+Header\+Delegate} (Rect rect, GUIContent label)
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a75f0e7df5a15714617617d840a4f8729}\label{class_malee_1_1_editor_1_1_reorderable_list_a75f0e7df5a15714617617d840a4f8729}} 
+delegate void {\bfseries Draw\+Footer\+Delegate} (Rect rect)
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a18dd744f571d8bb9d76c19a82dca616b}\label{class_malee_1_1_editor_1_1_reorderable_list_a18dd744f571d8bb9d76c19a82dca616b}} 
+delegate void {\bfseries Draw\+Element\+Delegate} (Rect rect, Serialized\+Property element, GUIContent label, bool selected, bool focused)
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a78c68b319b346cd336b17b2e26a024ea}\label{class_malee_1_1_editor_1_1_reorderable_list_a78c68b319b346cd336b17b2e26a024ea}} 
+delegate void {\bfseries Action\+Delegate} (\mbox{\hyperlink{class_malee_1_1_editor_1_1_reorderable_list}{Reorderable\+List}} list)
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_aea9a0281068befbaf8fb3bd9e07e5ce9}\label{class_malee_1_1_editor_1_1_reorderable_list_aea9a0281068befbaf8fb3bd9e07e5ce9}} 
+delegate bool {\bfseries Action\+Bool\+Delegate} (\mbox{\hyperlink{class_malee_1_1_editor_1_1_reorderable_list}{Reorderable\+List}} list)
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a12a00f752dc43c7424adeee55c5d5d50}\label{class_malee_1_1_editor_1_1_reorderable_list_a12a00f752dc43c7424adeee55c5d5d50}} 
+delegate void {\bfseries Add\+Dropdown\+Delegate} (Rect button\+Rect, \mbox{\hyperlink{class_malee_1_1_editor_1_1_reorderable_list}{Reorderable\+List}} list)
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_adab5e433f56cc92783efecb8fdfb9598}\label{class_malee_1_1_editor_1_1_reorderable_list_adab5e433f56cc92783efecb8fdfb9598}} 
+delegate Object {\bfseries Drag\+Drop\+Reference\+Delegate} (Object\mbox{[}$\,$\mbox{]} references, \mbox{\hyperlink{class_malee_1_1_editor_1_1_reorderable_list}{Reorderable\+List}} list)
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a762c2f6ec2d70b7078c44b4116cb800e}\label{class_malee_1_1_editor_1_1_reorderable_list_a762c2f6ec2d70b7078c44b4116cb800e}} 
+delegate void {\bfseries Drag\+Drop\+Append\+Delegate} (Object reference, \mbox{\hyperlink{class_malee_1_1_editor_1_1_reorderable_list}{Reorderable\+List}} list)
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_ad198f81616507f0d25cc2686196e0a25}\label{class_malee_1_1_editor_1_1_reorderable_list_ad198f81616507f0d25cc2686196e0a25}} 
+delegate float {\bfseries Get\+Element\+Height\+Delegate} (Serialized\+Property element)
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a7f1522e9ac2295fe02c12e16dbb78340}\label{class_malee_1_1_editor_1_1_reorderable_list_a7f1522e9ac2295fe02c12e16dbb78340}} 
+delegate float {\bfseries Get\+Elements\+Height\+Delegate} (\mbox{\hyperlink{class_malee_1_1_editor_1_1_reorderable_list}{Reorderable\+List}} list)
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a7c6fd153ea88448094b39f81bf06ebdd}\label{class_malee_1_1_editor_1_1_reorderable_list_a7c6fd153ea88448094b39f81bf06ebdd}} 
+delegate string {\bfseries Get\+Element\+Name\+Delegate} (Serialized\+Property element)
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a227fc0f01ebc1217bad78113c6ebb9df}\label{class_malee_1_1_editor_1_1_reorderable_list_a227fc0f01ebc1217bad78113c6ebb9df}} 
+delegate GUIContent {\bfseries Get\+Element\+Label\+Delegate} (Serialized\+Property element)
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_ac19628dedd39a9b5988cae17ca852225}\label{class_malee_1_1_editor_1_1_reorderable_list_ac19628dedd39a9b5988cae17ca852225}} 
+delegate void {\bfseries Surrogate\+Callback} (Serialized\+Property element, Object object\+Reference, \mbox{\hyperlink{class_malee_1_1_editor_1_1_reorderable_list}{Reorderable\+List}} list)
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a2276a19a3534a8158f15e0e62f1fed10}\label{class_malee_1_1_editor_1_1_reorderable_list_a2276a19a3534a8158f15e0e62f1fed10}} 
+{\bfseries Reorderable\+List} (Serialized\+Property list)
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_ae5c19938e42ff66e5f9c873d9c5a46bd}\label{class_malee_1_1_editor_1_1_reorderable_list_ae5c19938e42ff66e5f9c873d9c5a46bd}} 
+{\bfseries Reorderable\+List} (Serialized\+Property list, bool can\+Add, bool can\+Remove, bool draggable)
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a91864b447ccde9d01116de9f04a3797b}\label{class_malee_1_1_editor_1_1_reorderable_list_a91864b447ccde9d01116de9f04a3797b}} 
+{\bfseries Reorderable\+List} (Serialized\+Property list, bool can\+Add, bool can\+Remove, bool draggable, Element\+Display\+Type element\+Display\+Type, string element\+Name\+Property, Texture element\+Icon)
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a6a7de74370b1373cf15c49e9c7f16d2b}\label{class_malee_1_1_editor_1_1_reorderable_list_a6a7de74370b1373cf15c49e9c7f16d2b}} 
+{\bfseries Reorderable\+List} (Serialized\+Property list, bool can\+Add, bool can\+Remove, bool draggable, Element\+Display\+Type element\+Display\+Type, string element\+Name\+Property, string element\+Name\+Override, Texture element\+Icon)
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_ae33992d1ccfab6d933ff2aacad42977a}\label{class_malee_1_1_editor_1_1_reorderable_list_ae33992d1ccfab6d933ff2aacad42977a}} 
+float {\bfseries Get\+Height} ()
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_adfff2b2311ac7ded81bc0941ed67b2d6}\label{class_malee_1_1_editor_1_1_reorderable_list_adfff2b2311ac7ded81bc0941ed67b2d6}} 
+void {\bfseries Do\+Layout\+List} ()
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a2a5edadee2e83cc815baffc3604bf899}\label{class_malee_1_1_editor_1_1_reorderable_list_a2a5edadee2e83cc815baffc3604bf899}} 
+void {\bfseries Do\+List} (Rect rect, GUIContent label)
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_aea063235dd538ffb2225408750681149}\label{class_malee_1_1_editor_1_1_reorderable_list_aea063235dd538ffb2225408750681149}} 
+Serialized\+Property {\bfseries Add\+Item$<$ T $>$} (T item)
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_afb66343466ec035f251daa6b78b4342b}\label{class_malee_1_1_editor_1_1_reorderable_list_afb66343466ec035f251daa6b78b4342b}} 
+Serialized\+Property {\bfseries Add\+Item} ()
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a6a8c1966e3ae842563e22b6eee1afe85}\label{class_malee_1_1_editor_1_1_reorderable_list_a6a8c1966e3ae842563e22b6eee1afe85}} 
+void {\bfseries Remove} (int\mbox{[}$\,$\mbox{]} selection)
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_ac2c8316360d7513d09f74a7ea9bcf474}\label{class_malee_1_1_editor_1_1_reorderable_list_ac2c8316360d7513d09f74a7ea9bcf474}} 
+void {\bfseries Remove\+Item} (int index)
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a316c7d696c73410a65c4e28fa0bee889}\label{class_malee_1_1_editor_1_1_reorderable_list_a316c7d696c73410a65c4e28fa0bee889}} 
+Serialized\+Property {\bfseries Get\+Item} (int index)
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_ab1305db6802e2ae4b5b0db26bb47b14c}\label{class_malee_1_1_editor_1_1_reorderable_list_ab1305db6802e2ae4b5b0db26bb47b14c}} 
+int {\bfseries Index\+Of} (Serialized\+Property element)
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_aa4de355c44be687f38cfaf80e02f675f}\label{class_malee_1_1_editor_1_1_reorderable_list_aa4de355c44be687f38cfaf80e02f675f}} 
+void {\bfseries Grab\+Keyboard\+Focus} ()
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_ade06e7563209915cedfdf90dadf17595}\label{class_malee_1_1_editor_1_1_reorderable_list_ade06e7563209915cedfdf90dadf17595}} 
+bool {\bfseries Has\+Keyboard\+Control} ()
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a8c9473f5fc7fb374c5835900e9efd4c0}\label{class_malee_1_1_editor_1_1_reorderable_list_a8c9473f5fc7fb374c5835900e9efd4c0}} 
+void {\bfseries Release\+Keyboard\+Focus} ()
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_aeb241fee1c057a662e4d89de4ec927f2}\label{class_malee_1_1_editor_1_1_reorderable_list_aeb241fee1c057a662e4d89de4ec927f2}} 
+void {\bfseries Set\+Page} (int page)
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a43cab605ec454edfe9e6c45426318ba8}\label{class_malee_1_1_editor_1_1_reorderable_list_a43cab605ec454edfe9e6c45426318ba8}} 
+void {\bfseries Set\+Page\+By\+Index} (int index)
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_ae8409a0383909fdd6640524306307cde}\label{class_malee_1_1_editor_1_1_reorderable_list_ae8409a0383909fdd6640524306307cde}} 
+int {\bfseries Get\+Page} (int index)
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a05cfe63596734a76a0445eb286252964}\label{class_malee_1_1_editor_1_1_reorderable_list_a05cfe63596734a76a0445eb286252964}} 
+int {\bfseries Get\+Page\+By\+Index} (int index)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_aeb8d3d147f60ef833a367dee214ca866}\label{class_malee_1_1_editor_1_1_reorderable_list_aeb8d3d147f60ef833a367dee214ca866}} 
+bool {\bfseries can\+Add}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a020919a1f876c267efc445b18c7d7f59}\label{class_malee_1_1_editor_1_1_reorderable_list_a020919a1f876c267efc445b18c7d7f59}} 
+bool {\bfseries can\+Remove}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a393a1694e9e64568e043b80c3edc0e82}\label{class_malee_1_1_editor_1_1_reorderable_list_a393a1694e9e64568e043b80c3edc0e82}} 
+bool {\bfseries draggable}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_afb4f8f7b8b626e291abae00de727a689}\label{class_malee_1_1_editor_1_1_reorderable_list_afb4f8f7b8b626e291abae00de727a689}} 
+bool {\bfseries sortable}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a19299d7b3f9eddf9fcf4f93992f84fbf}\label{class_malee_1_1_editor_1_1_reorderable_list_a19299d7b3f9eddf9fcf4f93992f84fbf}} 
+bool {\bfseries expandable}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_af95aebd049f184401bf5636ecdd7f226}\label{class_malee_1_1_editor_1_1_reorderable_list_af95aebd049f184401bf5636ecdd7f226}} 
+bool {\bfseries multiple\+Selection}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a503d6f5a8ed384c60ebffcec0aacd0a5}\label{class_malee_1_1_editor_1_1_reorderable_list_a503d6f5a8ed384c60ebffcec0aacd0a5}} 
+GUIContent {\bfseries label}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a7cf3b15425dfdde7de716a4057bfb9c1}\label{class_malee_1_1_editor_1_1_reorderable_list_a7cf3b15425dfdde7de716a4057bfb9c1}} 
+float {\bfseries header\+Height}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a12ca55c71ea4439d7e98c6493fe5bb69}\label{class_malee_1_1_editor_1_1_reorderable_list_a12ca55c71ea4439d7e98c6493fe5bb69}} 
+float {\bfseries footer\+Height}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a14250ce4fdc67294ea76c947c97129bc}\label{class_malee_1_1_editor_1_1_reorderable_list_a14250ce4fdc67294ea76c947c97129bc}} 
+float {\bfseries slide\+Easing}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a445f33a86557124fbd813a51d4a9a1fd}\label{class_malee_1_1_editor_1_1_reorderable_list_a445f33a86557124fbd813a51d4a9a1fd}} 
+float {\bfseries vertical\+Spacing}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a58d6b448466deeedae299117bc5e4260}\label{class_malee_1_1_editor_1_1_reorderable_list_a58d6b448466deeedae299117bc5e4260}} 
+bool {\bfseries show\+Default\+Background}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a1caea9c15352373687cc21017dbc1ebd}\label{class_malee_1_1_editor_1_1_reorderable_list_a1caea9c15352373687cc21017dbc1ebd}} 
+Element\+Display\+Type {\bfseries element\+Display\+Type}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_af087f702a921b9e86c7afba931a9caf0}\label{class_malee_1_1_editor_1_1_reorderable_list_af087f702a921b9e86c7afba931a9caf0}} 
+string {\bfseries element\+Name\+Property}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a4f5904467c4504783f65ca277e1425c1}\label{class_malee_1_1_editor_1_1_reorderable_list_a4f5904467c4504783f65ca277e1425c1}} 
+string {\bfseries element\+Name\+Override}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a4c62495ff250e0a94e2366acbdbac36e}\label{class_malee_1_1_editor_1_1_reorderable_list_a4c62495ff250e0a94e2366acbdbac36e}} 
+bool {\bfseries element\+Labels}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_af46c0ff720bff01c6a92d4aa79f5bf53}\label{class_malee_1_1_editor_1_1_reorderable_list_af46c0ff720bff01c6a92d4aa79f5bf53}} 
+Texture {\bfseries element\+Icon}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_ac778fb69d94b0456d530a5c8f7502d81}\label{class_malee_1_1_editor_1_1_reorderable_list_ac778fb69d94b0456d530a5c8f7502d81}} 
+\mbox{\hyperlink{struct_malee_1_1_editor_1_1_reorderable_list_1_1_surrogate}{Surrogate}} {\bfseries surrogate}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_afe49b847830c55e75d1498c7bd1cf742}\label{class_malee_1_1_editor_1_1_reorderable_list_afe49b847830c55e75d1498c7bd1cf742}} 
+bool {\bfseries paginate}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a7e9590161e26be5b50fe0c2940c66cd1}\label{class_malee_1_1_editor_1_1_reorderable_list_a7e9590161e26be5b50fe0c2940c66cd1}} 
+int {\bfseries page\+Size}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_ade064b7de4f718c704c6bebf83230d4e}\label{class_malee_1_1_editor_1_1_reorderable_list_ade064b7de4f718c704c6bebf83230d4e}} 
+Serialized\+Property {\bfseries List}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a2ce315f92523105ecdb1125b3c9eca98}\label{class_malee_1_1_editor_1_1_reorderable_list_a2ce315f92523105ecdb1125b3c9eca98}} 
+bool {\bfseries Has\+List}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a489e6cefde57e7147c9fc1dd43590fde}\label{class_malee_1_1_editor_1_1_reorderable_list_a489e6cefde57e7147c9fc1dd43590fde}} 
+int {\bfseries Length}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a68d5bb662d07a4ce251ba54f862940d9}\label{class_malee_1_1_editor_1_1_reorderable_list_a68d5bb662d07a4ce251ba54f862940d9}} 
+int {\bfseries Visible\+Length}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a3d233b0a0fe435dc0bf45b5eb2fd275e}\label{class_malee_1_1_editor_1_1_reorderable_list_a3d233b0a0fe435dc0bf45b5eb2fd275e}} 
+int\mbox{[}$\,$\mbox{]} {\bfseries Selected}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a115fa737e108a96909152b1e0ca78e31}\label{class_malee_1_1_editor_1_1_reorderable_list_a115fa737e108a96909152b1e0ca78e31}} 
+int {\bfseries Index}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_afac8b4ef89e69a60986f31099a1deb13}\label{class_malee_1_1_editor_1_1_reorderable_list_afac8b4ef89e69a60986f31099a1deb13}} 
+bool {\bfseries Is\+Dragging}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a0fd85669d52f30c8008cb741220ca049}\label{class_malee_1_1_editor_1_1_reorderable_list_a0fd85669d52f30c8008cb741220ca049}} 
+Draw\+Header\+Delegate {\bfseries draw\+Header\+Callback}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a86368ab56046a987089a53a64ded0ceb}\label{class_malee_1_1_editor_1_1_reorderable_list_a86368ab56046a987089a53a64ded0ceb}} 
+Draw\+Footer\+Delegate {\bfseries draw\+Footer\+Callback}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_ae723e6c008c039bd6b725c86ead45495}\label{class_malee_1_1_editor_1_1_reorderable_list_ae723e6c008c039bd6b725c86ead45495}} 
+Draw\+Element\+Delegate {\bfseries draw\+Element\+Callback}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a07f0d25c260c3c885146220e98e658cf}\label{class_malee_1_1_editor_1_1_reorderable_list_a07f0d25c260c3c885146220e98e658cf}} 
+Draw\+Element\+Delegate {\bfseries draw\+Element\+Background\+Callback}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_ab58fb30368696efcb73eef70ed02e92a}\label{class_malee_1_1_editor_1_1_reorderable_list_ab58fb30368696efcb73eef70ed02e92a}} 
+Get\+Element\+Height\+Delegate {\bfseries get\+Element\+Height\+Callback}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_ab512b9afcd2494843d5971ba67593e54}\label{class_malee_1_1_editor_1_1_reorderable_list_ab512b9afcd2494843d5971ba67593e54}} 
+Get\+Elements\+Height\+Delegate {\bfseries get\+Elements\+Height\+Callback}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a74ed3175a25890bf40d52f9486894609}\label{class_malee_1_1_editor_1_1_reorderable_list_a74ed3175a25890bf40d52f9486894609}} 
+Get\+Element\+Name\+Delegate {\bfseries get\+Element\+Name\+Callback}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a79a88d3bc9f3b4d1d3aa6623943e0fe9}\label{class_malee_1_1_editor_1_1_reorderable_list_a79a88d3bc9f3b4d1d3aa6623943e0fe9}} 
+Get\+Element\+Label\+Delegate {\bfseries get\+Element\+Label\+Callback}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a50233b85e265fcf50f95272e4863caac}\label{class_malee_1_1_editor_1_1_reorderable_list_a50233b85e265fcf50f95272e4863caac}} 
+Drag\+Drop\+Reference\+Delegate {\bfseries on\+Validate\+Drag\+And\+Drop\+Callback}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a88cfbfc7a17768ba8381a8a827bdd606}\label{class_malee_1_1_editor_1_1_reorderable_list_a88cfbfc7a17768ba8381a8a827bdd606}} 
+Drag\+Drop\+Append\+Delegate {\bfseries on\+Append\+Drag\+Drop\+Callback}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a11c65bc6449b8ca09dfb575c2da3ba54}\label{class_malee_1_1_editor_1_1_reorderable_list_a11c65bc6449b8ca09dfb575c2da3ba54}} 
+Action\+Delegate {\bfseries on\+Reorder\+Callback}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a3f4b78b35ab08caa7534b16b4d3eda97}\label{class_malee_1_1_editor_1_1_reorderable_list_a3f4b78b35ab08caa7534b16b4d3eda97}} 
+Action\+Delegate {\bfseries on\+Select\+Callback}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a71959171e4b7bb0854b1c8da9c1f28d2}\label{class_malee_1_1_editor_1_1_reorderable_list_a71959171e4b7bb0854b1c8da9c1f28d2}} 
+Action\+Delegate {\bfseries on\+Add\+Callback}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_aee52fa2d475e04d6b16960df26c96cbc}\label{class_malee_1_1_editor_1_1_reorderable_list_aee52fa2d475e04d6b16960df26c96cbc}} 
+Add\+Dropdown\+Delegate {\bfseries on\+Add\+Dropdown\+Callback}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_aaab1d9c6e32ad81058638d52e38af311}\label{class_malee_1_1_editor_1_1_reorderable_list_aaab1d9c6e32ad81058638d52e38af311}} 
+Action\+Delegate {\bfseries on\+Remove\+Callback}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a9f27dea0033c6bbdd0675c1b6aba46fb}\label{class_malee_1_1_editor_1_1_reorderable_list_a9f27dea0033c6bbdd0675c1b6aba46fb}} 
+Action\+Delegate {\bfseries on\+Mouse\+Up\+Callback}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a31992d961c8113e027f2ef7073295908}\label{class_malee_1_1_editor_1_1_reorderable_list_a31992d961c8113e027f2ef7073295908}} 
+Action\+Bool\+Delegate {\bfseries on\+Can\+Remove\+Callback}
+\item 
+\mbox{\Hypertarget{class_malee_1_1_editor_1_1_reorderable_list_a698627ef884fcc0c41a9a6e990f9d3b2}\label{class_malee_1_1_editor_1_1_reorderable_list_a698627ef884fcc0c41a9a6e990f9d3b2}} 
+Action\+Delegate {\bfseries on\+Changed\+Callback}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+sts/\+Slay The Software -\/ Final/\+Assets/\+Scripts/\+Level\+Map\+Scripts/\+Reorderable\+List/\+List/\+Editor/Reorderable\+List.\+cs\end{DoxyCompactItemize}

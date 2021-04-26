@@ -1,0 +1,105 @@
+\hypertarget{class_login}{}\doxysection{Login Class Reference}
+\label{class_login}\index{Login@{Login}}
+
+
+Script for handling \mbox{\hyperlink{class_login}{Login}} and Register functionality  
+
+
+
+
+Inherits Mono\+Behaviour.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_login_ae4d8ed54f077a4d1ee76d0a5468d9693}{Verify\+Login}} ()
+\begin{DoxyCompactList}\small\item\em Called when the login button is pressed Retrieves text in the Username and Password fields and sends to server for checking \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_login_a4002e627eb618c360b4fcc0a897e101e}{login\+Notify}} ()
+\begin{DoxyCompactList}\small\item\em Notfy method to be called when login request is processed Checks whether login was valid, invalid or a first time login \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_login_a099fa12743d4adc5a46b4e8a6b7c689a}{Verify\+Register}} ()
+\begin{DoxyCompactList}\small\item\em Called when the reset password button is clicked Retrieves new password and reentered new password and sends them to the server for verification \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_login_a58dfb2a247a85892bfd6adab8931720f}{change\+Password\+Notify}} ()
+\begin{DoxyCompactList}\small\item\em Notify method to be called when reset password request is processed Checks whether password has been changed successfully, or if there were any requirements not met \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_login_ade5626b3604001f6fea7907a2591c65d}\label{class_login_ade5626b3604001f6fea7907a2591c65d}} 
+Transform {\bfseries Main\+Canvas}
+\item 
+\mbox{\Hypertarget{class_login_a19173a34a42cf7b96a0f98671e3d888a}\label{class_login_a19173a34a42cf7b96a0f98671e3d888a}} 
+Game\+Object {\bfseries login\+Menu}
+\item 
+\mbox{\Hypertarget{class_login_a2f9740790fd1eb93f3a965b6a9289f2c}\label{class_login_a2f9740790fd1eb93f3a965b6a9289f2c}} 
+Game\+Object {\bfseries register\+Menu}
+\item 
+\mbox{\Hypertarget{class_login_a1d263c51ceb336402d1301d48039087d}\label{class_login_a1d263c51ceb336402d1301d48039087d}} 
+Input\+Field {\bfseries username\+Input}
+\item 
+\mbox{\Hypertarget{class_login_a71091485a14ce509eeab9b79410c754a}\label{class_login_a71091485a14ce509eeab9b79410c754a}} 
+Input\+Field {\bfseries password\+Input}
+\item 
+\mbox{\Hypertarget{class_login_ae7fc681deeb9f33c233b21092b2720da}\label{class_login_ae7fc681deeb9f33c233b21092b2720da}} 
+Game\+Object {\bfseries invalid\+Prompt}
+\item 
+\mbox{\Hypertarget{class_login_a4e86ed8bb205acd60af1183f75ab81ca}\label{class_login_a4e86ed8bb205acd60af1183f75ab81ca}} 
+Game\+Object {\bfseries invalid\+Register\+Prompt}
+\item 
+\mbox{\Hypertarget{class_login_a9fed6af23545f2388ce25e4ee5633fb5}\label{class_login_a9fed6af23545f2388ce25e4ee5633fb5}} 
+Input\+Field {\bfseries new\+Password\+Input}
+\item 
+\mbox{\Hypertarget{class_login_afd55249ec4665b8ea07d06e8fa8f19a1}\label{class_login_afd55249ec4665b8ea07d06e8fa8f19a1}} 
+Input\+Field {\bfseries reenter\+New\+Password\+Input}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Script for handling \mbox{\hyperlink{class_login}{Login}} and Register functionality 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_login_a58dfb2a247a85892bfd6adab8931720f}\label{class_login_a58dfb2a247a85892bfd6adab8931720f}} 
+\index{Login@{Login}!changePasswordNotify@{changePasswordNotify}}
+\index{changePasswordNotify@{changePasswordNotify}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{changePasswordNotify()}{changePasswordNotify()}}
+{\footnotesize\ttfamily void Login.\+change\+Password\+Notify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Notify method to be called when reset password request is processed Checks whether password has been changed successfully, or if there were any requirements not met 
+
+\mbox{\Hypertarget{class_login_a4002e627eb618c360b4fcc0a897e101e}\label{class_login_a4002e627eb618c360b4fcc0a897e101e}} 
+\index{Login@{Login}!loginNotify@{loginNotify}}
+\index{loginNotify@{loginNotify}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{loginNotify()}{loginNotify()}}
+{\footnotesize\ttfamily void Login.\+login\+Notify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Notfy method to be called when login request is processed Checks whether login was valid, invalid or a first time login 
+
+\mbox{\Hypertarget{class_login_ae4d8ed54f077a4d1ee76d0a5468d9693}\label{class_login_ae4d8ed54f077a4d1ee76d0a5468d9693}} 
+\index{Login@{Login}!VerifyLogin@{VerifyLogin}}
+\index{VerifyLogin@{VerifyLogin}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{VerifyLogin()}{VerifyLogin()}}
+{\footnotesize\ttfamily void Login.\+Verify\+Login (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Called when the login button is pressed Retrieves text in the Username and Password fields and sends to server for checking 
+
+\mbox{\Hypertarget{class_login_a099fa12743d4adc5a46b4e8a6b7c689a}\label{class_login_a099fa12743d4adc5a46b4e8a6b7c689a}} 
+\index{Login@{Login}!VerifyRegister@{VerifyRegister}}
+\index{VerifyRegister@{VerifyRegister}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{VerifyRegister()}{VerifyRegister()}}
+{\footnotesize\ttfamily void Login.\+Verify\+Register (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Called when the reset password button is clicked Retrieves new password and reentered new password and sends them to the server for verification 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+sts/\+Slay The Software -\/ Final/\+Assets/\+Scripts/\+Login\+Scripts/Login.\+cs\end{DoxyCompactItemize}

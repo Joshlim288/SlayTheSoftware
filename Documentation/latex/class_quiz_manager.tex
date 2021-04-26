@@ -1,0 +1,138 @@
+\hypertarget{class_quiz_manager}{}\doxysection{Quiz\+Manager Class Reference}
+\label{class_quiz_manager}\index{QuizManager@{QuizManager}}
+
+
+Script for handling the logic in normal quiz mode  
+
+
+
+
+Inherits Mono\+Behaviour.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_quiz_manager_a5085e361f425851432c11ad980ec53f9}{generate\+Question\+Notify}} ()
+\begin{DoxyCompactList}\small\item\em Notify method called when questions for the \mbox{\hyperlink{class_level}{Level}} have been retrieved Sets the question text in the scene \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_quiz_manager_a0c71b65b60d031f0f74e28a7325024c1}{correct}} ()
+\begin{DoxyCompactList}\small\item\em Called when question has been answered correctly adjusts points and correct counter accordingly \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_quiz_manager_aa8f852880523ee9a62c5a76f2bd3fa4f}{wrong}} ()
+\begin{DoxyCompactList}\small\item\em Called when question has been answered incorrectly adjusts points and correct counter accordingly \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_quiz_manager_a2935200d76360fede5d614b41016a1ec}{deactivate\+Buttons}} ()
+\begin{DoxyCompactList}\small\item\em Called when an answer has been clicked Ensures only one answer will be logged for every question \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_quiz_manager_a266de96feeb132c2da9385b1b1d5ff79}{exit}} ()
+\begin{DoxyCompactList}\small\item\em Called when back button is pressed Returns to the Level\+Map \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_quiz_manager_a39fb50e000a1af4c2579c4b8b30d2ba8}{user\+Position\+Notify}} ()
+\begin{DoxyCompactList}\small\item\em Notify method called when user position has been retrieved Loads the Level\+Map \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_quiz_manager_a19cfd8899af9b894d880e8dede0c2da2}\label{class_quiz_manager_a19cfd8899af9b894d880e8dede0c2da2}} 
+Button\mbox{[}$\,$\mbox{]} {\bfseries options}
+\item 
+\mbox{\Hypertarget{class_quiz_manager_acb793026acaffeb55457b607ce896fdc}\label{class_quiz_manager_acb793026acaffeb55457b607ce896fdc}} 
+float {\bfseries Button\+Reactivate\+Delay} = 1f
+\item 
+\mbox{\Hypertarget{class_quiz_manager_acfb017b561d4ac52226260f02b2eba46}\label{class_quiz_manager_acfb017b561d4ac52226260f02b2eba46}} 
+int {\bfseries current\+Question}
+\item 
+\mbox{\Hypertarget{class_quiz_manager_a77abb15e5d2a920f6affb6a272cdadc0}\label{class_quiz_manager_a77abb15e5d2a920f6affb6a272cdadc0}} 
+Game\+Object {\bfseries Quizpanel}
+\item 
+\mbox{\Hypertarget{class_quiz_manager_aa5b43e03b602e4b1d593916539d06d12}\label{class_quiz_manager_aa5b43e03b602e4b1d593916539d06d12}} 
+Game\+Object {\bfseries Go\+Panel}
+\item 
+\mbox{\Hypertarget{class_quiz_manager_a8696d4ff146b3c28ff09f7f0a92c0455}\label{class_quiz_manager_a8696d4ff146b3c28ff09f7f0a92c0455}} 
+Text {\bfseries Question\+Txt}
+\item 
+\mbox{\Hypertarget{class_quiz_manager_a030a60fe70e6bf69e2a3e1acb6e63019}\label{class_quiz_manager_a030a60fe70e6bf69e2a3e1acb6e63019}} 
+Text {\bfseries Score\+Txt}
+\item 
+\mbox{\Hypertarget{class_quiz_manager_ab0dc49e01c873b0f99928db28e1004e9}\label{class_quiz_manager_ab0dc49e01c873b0f99928db28e1004e9}} 
+Text {\bfseries Difficulty\+Txt}
+\item 
+\mbox{\Hypertarget{class_quiz_manager_a44e5a9d21076ec5475e8fcb2cca9fa89}\label{class_quiz_manager_a44e5a9d21076ec5475e8fcb2cca9fa89}} 
+Text {\bfseries Points\+Change\+Txt}
+\item 
+\mbox{\Hypertarget{class_quiz_manager_a36e2c150ace61789cf8b9e34e0fa64f6}\label{class_quiz_manager_a36e2c150ace61789cf8b9e34e0fa64f6}} 
+Text {\bfseries Correct\+Txt}
+\item 
+\mbox{\Hypertarget{class_quiz_manager_ad5e024a846b342c186c9ea786043c67e}\label{class_quiz_manager_ad5e024a846b342c186c9ea786043c67e}} 
+int {\bfseries points\+Change} = 0
+\item 
+\mbox{\Hypertarget{class_quiz_manager_a8706927c87d0729d9d4c76bfe754a6db}\label{class_quiz_manager_a8706927c87d0729d9d4c76bfe754a6db}} 
+int {\bfseries correct\+Count} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Script for handling the logic in normal quiz mode 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_quiz_manager_a0c71b65b60d031f0f74e28a7325024c1}\label{class_quiz_manager_a0c71b65b60d031f0f74e28a7325024c1}} 
+\index{QuizManager@{QuizManager}!correct@{correct}}
+\index{correct@{correct}!QuizManager@{QuizManager}}
+\doxysubsubsection{\texorpdfstring{correct()}{correct()}}
+{\footnotesize\ttfamily void Quiz\+Manager.\+correct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Called when question has been answered correctly adjusts points and correct counter accordingly 
+
+\mbox{\Hypertarget{class_quiz_manager_a2935200d76360fede5d614b41016a1ec}\label{class_quiz_manager_a2935200d76360fede5d614b41016a1ec}} 
+\index{QuizManager@{QuizManager}!deactivateButtons@{deactivateButtons}}
+\index{deactivateButtons@{deactivateButtons}!QuizManager@{QuizManager}}
+\doxysubsubsection{\texorpdfstring{deactivateButtons()}{deactivateButtons()}}
+{\footnotesize\ttfamily void Quiz\+Manager.\+deactivate\+Buttons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Called when an answer has been clicked Ensures only one answer will be logged for every question 
+
+\mbox{\Hypertarget{class_quiz_manager_a266de96feeb132c2da9385b1b1d5ff79}\label{class_quiz_manager_a266de96feeb132c2da9385b1b1d5ff79}} 
+\index{QuizManager@{QuizManager}!exit@{exit}}
+\index{exit@{exit}!QuizManager@{QuizManager}}
+\doxysubsubsection{\texorpdfstring{exit()}{exit()}}
+{\footnotesize\ttfamily void Quiz\+Manager.\+exit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Called when back button is pressed Returns to the Level\+Map 
+
+\mbox{\Hypertarget{class_quiz_manager_a5085e361f425851432c11ad980ec53f9}\label{class_quiz_manager_a5085e361f425851432c11ad980ec53f9}} 
+\index{QuizManager@{QuizManager}!generateQuestionNotify@{generateQuestionNotify}}
+\index{generateQuestionNotify@{generateQuestionNotify}!QuizManager@{QuizManager}}
+\doxysubsubsection{\texorpdfstring{generateQuestionNotify()}{generateQuestionNotify()}}
+{\footnotesize\ttfamily void Quiz\+Manager.\+generate\+Question\+Notify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Notify method called when questions for the \mbox{\hyperlink{class_level}{Level}} have been retrieved Sets the question text in the scene 
+
+\mbox{\Hypertarget{class_quiz_manager_a39fb50e000a1af4c2579c4b8b30d2ba8}\label{class_quiz_manager_a39fb50e000a1af4c2579c4b8b30d2ba8}} 
+\index{QuizManager@{QuizManager}!userPositionNotify@{userPositionNotify}}
+\index{userPositionNotify@{userPositionNotify}!QuizManager@{QuizManager}}
+\doxysubsubsection{\texorpdfstring{userPositionNotify()}{userPositionNotify()}}
+{\footnotesize\ttfamily void Quiz\+Manager.\+user\+Position\+Notify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Notify method called when user position has been retrieved Loads the Level\+Map 
+
+\mbox{\Hypertarget{class_quiz_manager_aa8f852880523ee9a62c5a76f2bd3fa4f}\label{class_quiz_manager_aa8f852880523ee9a62c5a76f2bd3fa4f}} 
+\index{QuizManager@{QuizManager}!wrong@{wrong}}
+\index{wrong@{wrong}!QuizManager@{QuizManager}}
+\doxysubsubsection{\texorpdfstring{wrong()}{wrong()}}
+{\footnotesize\ttfamily void Quiz\+Manager.\+wrong (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Called when question has been answered incorrectly adjusts points and correct counter accordingly 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+sts/\+Slay The Software -\/ Final/\+Assets/\+Scripts/\+Quiz\+Mode\+Scripts/Quiz\+Manager.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,210 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffe70aba2e7074048aca5de573b64a59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SimpleSelectedItems:
+    m_Keys:
+    - Assets/FacebookSDK.meta
+    - Assets/FacebookSDK/Examples.meta
+    - Assets/FacebookSDK/Examples/AccessTokenMenu.unity
+    - Assets/FacebookSDK/Examples/AccessTokenMenu.unity.meta
+    - Assets/FacebookSDK/Examples/AppEvents.unity
+    - Assets/FacebookSDK/Examples/AppEvents.unity.meta
+    - Assets/FacebookSDK/Examples/AppLinks.unity
+    - Assets/FacebookSDK/Examples/AppLinks.unity.meta
+    - Assets/FacebookSDK/Examples/AppRequests.unity
+    - Assets/FacebookSDK/Examples/AppRequests.unity.meta
+    - Assets/FacebookSDK/Examples/DialogShare.unity
+    - Assets/FacebookSDK/Examples/DialogShare.unity.meta
+    - Assets/FacebookSDK/Examples/GraphRequest.unity
+    - Assets/FacebookSDK/Examples/GraphRequest.unity.meta
+    - Assets/FacebookSDK/Examples/LogView.unity
+    - Assets/FacebookSDK/Examples/LogView.unity.meta
+    - Assets/FacebookSDK/Examples/MainMenu.unity
+    - Assets/FacebookSDK/Examples/MainMenu.unity.meta
+    - Assets/FacebookSDK/Examples/Pay.unity
+    - Assets/FacebookSDK/Examples/Pay.unity.meta
+    - Assets/FacebookSDK/Examples/Scripts.meta
+    - Assets/FacebookSDK/Examples/Scripts/ConsoleBase.cs
+    - Assets/FacebookSDK/Examples/Scripts/ConsoleBase.cs.meta
+    - Assets/FacebookSDK/Examples/Scripts/LogView.cs
+    - Assets/FacebookSDK/Examples/Scripts/LogView.cs.meta
+    - Assets/FacebookSDK/Examples/Scripts/MenuBase.cs
+    - Assets/FacebookSDK/Examples/Scripts/MenuBase.cs.meta
+    - Assets/FacebookSDK/Examples/Scripts/SubMenus.meta
+    - Assets/FacebookSDK/Examples/Scripts/SubMenus/AccessTokenMenu.cs
+    - Assets/FacebookSDK/Examples/Scripts/SubMenus/AccessTokenMenu.cs.meta
+    - Assets/FacebookSDK/Examples/Scripts/SubMenus/AppEvents.cs
+    - Assets/FacebookSDK/Examples/Scripts/SubMenus/AppEvents.cs.meta
+    - Assets/FacebookSDK/Examples/Scripts/SubMenus/AppLinks.cs
+    - Assets/FacebookSDK/Examples/Scripts/SubMenus/AppLinks.cs.meta
+    - Assets/FacebookSDK/Examples/Scripts/SubMenus/AppRequests.cs
+    - Assets/FacebookSDK/Examples/Scripts/SubMenus/AppRequests.cs.meta
+    - Assets/FacebookSDK/Examples/Scripts/SubMenus/DialogShare.cs
+    - Assets/FacebookSDK/Examples/Scripts/SubMenus/DialogShare.cs.meta
+    - Assets/FacebookSDK/Examples/Scripts/SubMenus/GraphRequest.cs
+    - Assets/FacebookSDK/Examples/Scripts/SubMenus/GraphRequest.cs.meta
+    - Assets/FacebookSDK/Examples/Scripts/SubMenus/MainMenu.cs
+    - Assets/FacebookSDK/Examples/Scripts/SubMenus/MainMenu.cs.meta
+    - Assets/FacebookSDK/Examples/Scripts/SubMenus/Pay.cs
+    - Assets/FacebookSDK/Examples/Scripts/SubMenus/Pay.cs.meta
+    - Assets/FacebookSDK/Examples/Textures.meta
+    - Assets/FacebookSDK/Examples/Textures/White.psd
+    - Assets/FacebookSDK/Examples/Textures/White.psd.meta
+    - Assets/FacebookSDK/Plugins.meta
+    - Assets/FacebookSDK/Plugins/Android.meta
+    - Assets/FacebookSDK/Plugins/Android/Facebook.Unity.Android.dll
+    - Assets/FacebookSDK/Plugins/Android/Facebook.Unity.Android.dll.meta
+    - Assets/FacebookSDK/Plugins/Android/libs.meta
+    - Assets/FacebookSDK/Plugins/Android/libs/facebook-android-wrapper-9.0.0.aar
+    - Assets/FacebookSDK/Plugins/Android/libs/facebook-android-wrapper-9.0.0.aar.meta
+    - Assets/FacebookSDK/Plugins/Canvas.meta
+    - Assets/FacebookSDK/Plugins/Canvas/CanvasJSSDKBindings.jslib
+    - Assets/FacebookSDK/Plugins/Canvas/CanvasJSSDKBindings.jslib.meta
+    - Assets/FacebookSDK/Plugins/Canvas/Facebook.Unity.Canvas.dll
+    - Assets/FacebookSDK/Plugins/Canvas/Facebook.Unity.Canvas.dll.meta
+    - Assets/FacebookSDK/Plugins/Editor.meta
+    - Assets/FacebookSDK/Plugins/Editor/Dependencies.xml
+    - Assets/FacebookSDK/Plugins/Editor/Dependencies.xml.meta
+    - Assets/FacebookSDK/Plugins/Editor/Facebook.Unity.Editor.dll
+    - Assets/FacebookSDK/Plugins/Editor/Facebook.Unity.Editor.dll.meta
+    - Assets/FacebookSDK/Plugins/Facebook.Unity.dll
+    - Assets/FacebookSDK/Plugins/Facebook.Unity.dll.meta
+    - Assets/FacebookSDK/Plugins/Gameroom.meta
+    - Assets/FacebookSDK/Plugins/Gameroom/Facebook.Unity.Gameroom.dll
+    - Assets/FacebookSDK/Plugins/Gameroom/Facebook.Unity.Gameroom.dll.meta
+    - Assets/FacebookSDK/Plugins/Gameroom/FacebookNamedPipeClient.dll
+    - Assets/FacebookSDK/Plugins/Gameroom/FacebookNamedPipeClient.dll.meta
+    - Assets/FacebookSDK/Plugins/Settings.meta
+    - Assets/FacebookSDK/Plugins/Settings/Facebook.Unity.Settings.dll
+    - Assets/FacebookSDK/Plugins/Settings/Facebook.Unity.Settings.dll.meta
+    - Assets/FacebookSDK/Plugins/iOS.meta
+    - Assets/FacebookSDK/Plugins/iOS/Facebook.Unity.IOS.dll
+    - Assets/FacebookSDK/Plugins/iOS/Facebook.Unity.IOS.dll.meta
+    - Assets/FacebookSDK/SDK.meta
+    - Assets/FacebookSDK/SDK/Editor.meta
+    - Assets/FacebookSDK/SDK/Editor/iOS.meta
+    - Assets/FacebookSDK/SDK/Editor/iOS/FBSDK+Internal.h
+    - Assets/FacebookSDK/SDK/Editor/iOS/FBSDK+Internal.h.meta
+    - Assets/FacebookSDK/SDK/Editor/iOS/FBUnityInterface.h
+    - Assets/FacebookSDK/SDK/Editor/iOS/FBUnityInterface.h.meta
+    - Assets/FacebookSDK/SDK/Editor/iOS/FBUnityInterface.mm
+    - Assets/FacebookSDK/SDK/Editor/iOS/FBUnityInterface.mm.meta
+    - Assets/FacebookSDK/SDK/Editor/iOS/FBUnitySDKDelegate.h
+    - Assets/FacebookSDK/SDK/Editor/iOS/FBUnitySDKDelegate.h.meta
+    - Assets/FacebookSDK/SDK/Editor/iOS/FBUnitySDKDelegate.m
+    - Assets/FacebookSDK/SDK/Editor/iOS/FBUnitySDKDelegate.m.meta
+    - Assets/FacebookSDK/SDK/Editor/iOS/FBUnityUtility.h
+    - Assets/FacebookSDK/SDK/Editor/iOS/FBUnityUtility.h.meta
+    - Assets/FacebookSDK/SDK/Editor/iOS/FBUnityUtility.mm
+    - Assets/FacebookSDK/SDK/Editor/iOS/FBUnityUtility.mm.meta
+    - Assets/FacebookSDK/SDK/Editor/iOS/fixup.projmods
+    - Assets/FacebookSDK/SDK/Editor/iOS/fixup.projmods.meta
+    - Assets/FacebookSDK/SDK/Resources.meta
+    - Assets/FacebookSDK/SDK/Resources/FacebookSettings.asset
+    - Assets/FacebookSDK/SDK/Resources/FacebookSettings.asset.meta
+    - Assets/FacebookSDK/link.xml
+    - Assets/FacebookSDK/link.xml.meta
+    - Assets/Fonts.meta
+    - Assets/Fonts/Prime-Light SDF.asset
+    - Assets/Fonts/Prime-Light SDF.asset.meta
+    - Assets/Fonts/Prime-Light.ttf
+    - Assets/Fonts/Prime-Light.ttf.meta
+    - Assets/Fonts/kenvector_future SDF.asset
+    - Assets/Fonts/kenvector_future SDF.asset.meta
+    - Assets/Fonts/kenvector_future.ttf
+    - Assets/Fonts/kenvector_future.ttf.meta
+    - Assets/Images.meta
+    - Assets/Images/BackButton.png
+    - Assets/Images/BackButton.png.meta
+    - Assets/Images/BackButton.zip
+    - Assets/Images/BackButton.zip.meta
+    - Assets/Images/BigBoss icon.png
+    - Assets/Images/BigBoss icon.png.meta
+    - Assets/Images/CZ3003 World Map.png
+    - Assets/Images/CZ3003 World Map.png.meta
+    - Assets/Images/Current Map Background.png
+    - Assets/Images/Current Map Background.png.meta
+    - Assets/Images/Main Background.png
+    - Assets/Images/Main Background.png.meta
+    - Assets/Images/MainMenuPanel.png
+    - Assets/Images/MainMenuPanel.png.meta
+    - Assets/Images/Map0.png
+    - Assets/Images/Map0.png.meta
+    - Assets/Images/Map1.png
+    - Assets/Images/Map1.png.meta
+    - Assets/Images/Map2.png
+    - Assets/Images/Map2.png.meta
+    - Assets/Images/Map3.png
+    - Assets/Images/Map3.png.meta
+    - Assets/Images/arrow.png
+    - Assets/Images/arrow.png.meta
+    - Assets/Images/cerebus.png
+    - Assets/Images/cerebus.png.meta
+    - Assets/Images/diamond.png
+    - Assets/Images/diamond.png.meta
+    - Assets/Images/imgbin_phoenix-silhouette-png.png
+    - Assets/Images/imgbin_phoenix-silhouette-png.png.meta
+    - Assets/Images/info_panel.png
+    - Assets/Images/info_panel.png.meta
+    - Assets/Images/info_panel_opaque.png
+    - Assets/Images/info_panel_opaque.png.meta
+    - Assets/Images/kisspng-diamond-stock-photography-clip-art-black-diamond-png-5ab14f98dd0861.6690286315215696889054.png
+    - Assets/Images/kisspng-diamond-stock-photography-clip-art-black-diamond-png-5ab14f98dd0861.6690286315215696889054.png.meta
+    - Assets/Images/mini boss.png
+    - Assets/Images/mini boss.png.meta
+    - Assets/Images/noun_vortex_22967.png
+    - Assets/Images/noun_vortex_22967.png.meta
+    - Assets/Images/vortex_with_background.png
+    - Assets/Images/vortex_with_background.png.meta
+    - Assets/PlayServicesResolver.meta
+    - Assets/PlayServicesResolver/Editor.meta
+    - Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.135.0.dll
+    - Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.135.0.dll.mdb
+    - Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.135.0.dll.mdb.meta
+    - Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.135.0.dll.meta
+    - Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.135.0.dll
+    - Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.135.0.dll.mdb
+    - Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.135.0.dll.mdb.meta
+    - Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.135.0.dll.meta
+    - Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll
+    - Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll.mdb
+    - Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll.mdb.meta
+    - Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll.meta
+    - Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.135.0.dll
+    - Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.135.0.dll.mdb
+    - Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.135.0.dll.mdb.meta
+    - Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.135.0.dll.meta
+    - Assets/PlayServicesResolver/Editor/play-services-resolver_v1.2.135.0.txt
+    - Assets/PlayServicesResolver/Editor/play-services-resolver_v1.2.135.0.txt.meta
+    - Assets/Scenes/CreateChallenge.unity
+    - Assets/Scenes/CreateChallenge.unity.meta
+    - Assets/Scenes/DataTestScene.unity
+    - Assets/Scenes/DataTestScene.unity.meta
+    - Assets/Scenes/EditDeleteChallenge.unity
+    - Assets/Scenes/EditDeleteChallenge.unity.meta
+    - Assets/Scenes/LevelMap 2.unity
+    - Assets/Scenes/LevelMap 2.unity.meta
+    - Assets/Scenes/PlayerScore.unity
+    - Assets/Scenes/PlayerScore.unity.meta
+    - Assets/Scenes/Social Media Sharing Page.unity
+    - Assets/Scenes/Social Media Sharing Page.unity.meta
+    - Assets/fbHolder.cs
+    - Assets/fbHolder.cs.meta
+    - 
+    m_Values: 0101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101
+  RevisionSummary: Reorganized and added docs
+  ChangesSearchValue: 
+  SelectedHistoryRevision: 
+  HistoryPageNumber: 0
+  TabIndex: 0

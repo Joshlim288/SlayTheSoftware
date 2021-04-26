@@ -1,0 +1,156 @@
+\hypertarget{class_view_challenges}{}\doxysection{View\+Challenges Class Reference}
+\label{class_view_challenges}\index{ViewChallenges@{ViewChallenges}}
+
+
+Script that handles the logic of the \mbox{\hyperlink{class_view_challenges}{View\+Challenges}} scene  
+
+
+
+
+Inherits Mono\+Behaviour.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_view_challenges_a04348c5f74b45238ec876eb9de0c8e1d}{display\+Challenge\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Notify method called when Challenge Mode Worlds for the \mbox{\hyperlink{class_user}{User}} have been retrieved Displays the name and access code of each \mbox{\hyperlink{class_world}{World}} in a list \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_view_challenges_a1ce7b4f35e749ca4547a81bb16f4621f}{Create\+Challenge}} ()
+\begin{DoxyCompactList}\small\item\em Sends request to the server to creates a new Challenge \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_view_challenges_a1fad9e912fdafa993709dda1d178a1d5}{Edit\+Challenge}} ()
+\begin{DoxyCompactList}\small\item\em Called when the edit button is clicked Changes scene to \mbox{\hyperlink{class_question_interface}{Question\+Interface}} to edit questions \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_view_challenges_a8123566bca4515c9a1f83883279a3010}{Delete\+Challenge}} ()
+\begin{DoxyCompactList}\small\item\em Called when the delete button is clicked Sends a request to the server to delete the \mbox{\hyperlink{class_world}{World}} the Student has clicked on \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_view_challenges_abf7352934b0947d158791b00228de72e}{retrieve\+Selected\+World}} ()
+\begin{DoxyCompactList}\small\item\em Called when edtiting or deleting a \mbox{\hyperlink{class_world}{World}} Retrieves the selected world for editing/deleting based on chosen world in Challenge Panel. Updates Custom\+World attribute in Current\+User\textquotesingle{}s static class Edit Data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_view_challenges_a5c111c094e9e5e678a07f26a60be56d1}{Share\+Challenge}} ()
+\begin{DoxyCompactList}\small\item\em Called when the Share button is clicked Allows the Student to share their \mbox{\hyperlink{class_result}{Result}} on Facebook or Twitter \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_view_challenges_afbe8846409200f385483874d244ac9fd}{get\+Qn\+Notify}} ()
+\begin{DoxyCompactList}\small\item\em Notify method called when question request has been processed \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_view_challenges_a8555981bd24d83278c332c621a20ab02}{delete\+Notify}} ()
+\begin{DoxyCompactList}\small\item\em Notify method called when deletion request has been processed \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_view_challenges_a0e27d1296eed07c2f4d2967fb93ef092}\label{class_view_challenges_a0e27d1296eed07c2f4d2967fb93ef092}} 
+Transform {\bfseries Main\+Canvas}
+\item 
+\mbox{\Hypertarget{class_view_challenges_abccec1cb4c3becb86716f3fb3705716e}\label{class_view_challenges_abccec1cb4c3becb86716f3fb3705716e}} 
+Game\+Object {\bfseries All\+Challenges\+Menu}
+\item 
+\mbox{\Hypertarget{class_view_challenges_a59ca02e665f5ccd6139a96a43ac928a2}\label{class_view_challenges_a59ca02e665f5ccd6139a96a43ac928a2}} 
+Game\+Object {\bfseries New\+Challenge\+Menu}
+\item 
+\mbox{\Hypertarget{class_view_challenges_aa7382102ec72b80d552a355284f850ed}\label{class_view_challenges_aa7382102ec72b80d552a355284f850ed}} 
+Game\+Object {\bfseries challenge\+Toggle\+Prefab}
+\item 
+\mbox{\Hypertarget{class_view_challenges_a5acf95244d58b33b74b9c9ed37dca80a}\label{class_view_challenges_a5acf95244d58b33b74b9c9ed37dca80a}} 
+Transform {\bfseries challenge\+Panel}
+\item 
+\mbox{\Hypertarget{class_view_challenges_adf22e9b6c76629f103f966ea26e62688}\label{class_view_challenges_adf22e9b6c76629f103f966ea26e62688}} 
+Toggle\+Group {\bfseries toggle\+Group}
+\item 
+\mbox{\Hypertarget{class_view_challenges_aecc95b947210dd68802029a13da6de2c}\label{class_view_challenges_aecc95b947210dd68802029a13da6de2c}} 
+Button {\bfseries edit\+Button}
+\item 
+\mbox{\Hypertarget{class_view_challenges_ab4a3cbf02e1153813663dd3df7d5195b}\label{class_view_challenges_ab4a3cbf02e1153813663dd3df7d5195b}} 
+Button {\bfseries delete\+Button}
+\item 
+\mbox{\Hypertarget{class_view_challenges_a114ed6b61add8354d03973127b7b6ed6}\label{class_view_challenges_a114ed6b61add8354d03973127b7b6ed6}} 
+Button {\bfseries share\+Button}
+\item 
+\mbox{\Hypertarget{class_view_challenges_acea69d700c83b0104a051d73c50d957b}\label{class_view_challenges_acea69d700c83b0104a051d73c50d957b}} 
+Input\+Field {\bfseries name\+Input}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Script that handles the logic of the \mbox{\hyperlink{class_view_challenges}{View\+Challenges}} scene 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_view_challenges_a1ce7b4f35e749ca4547a81bb16f4621f}\label{class_view_challenges_a1ce7b4f35e749ca4547a81bb16f4621f}} 
+\index{ViewChallenges@{ViewChallenges}!CreateChallenge@{CreateChallenge}}
+\index{CreateChallenge@{CreateChallenge}!ViewChallenges@{ViewChallenges}}
+\doxysubsubsection{\texorpdfstring{CreateChallenge()}{CreateChallenge()}}
+{\footnotesize\ttfamily void View\+Challenges.\+Create\+Challenge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sends request to the server to creates a new Challenge 
+
+\mbox{\Hypertarget{class_view_challenges_a8123566bca4515c9a1f83883279a3010}\label{class_view_challenges_a8123566bca4515c9a1f83883279a3010}} 
+\index{ViewChallenges@{ViewChallenges}!DeleteChallenge@{DeleteChallenge}}
+\index{DeleteChallenge@{DeleteChallenge}!ViewChallenges@{ViewChallenges}}
+\doxysubsubsection{\texorpdfstring{DeleteChallenge()}{DeleteChallenge()}}
+{\footnotesize\ttfamily void View\+Challenges.\+Delete\+Challenge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Called when the delete button is clicked Sends a request to the server to delete the \mbox{\hyperlink{class_world}{World}} the Student has clicked on 
+
+\mbox{\Hypertarget{class_view_challenges_a8555981bd24d83278c332c621a20ab02}\label{class_view_challenges_a8555981bd24d83278c332c621a20ab02}} 
+\index{ViewChallenges@{ViewChallenges}!deleteNotify@{deleteNotify}}
+\index{deleteNotify@{deleteNotify}!ViewChallenges@{ViewChallenges}}
+\doxysubsubsection{\texorpdfstring{deleteNotify()}{deleteNotify()}}
+{\footnotesize\ttfamily void View\+Challenges.\+delete\+Notify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Notify method called when deletion request has been processed 
+
+\mbox{\Hypertarget{class_view_challenges_a04348c5f74b45238ec876eb9de0c8e1d}\label{class_view_challenges_a04348c5f74b45238ec876eb9de0c8e1d}} 
+\index{ViewChallenges@{ViewChallenges}!displayChallengeData@{displayChallengeData}}
+\index{displayChallengeData@{displayChallengeData}!ViewChallenges@{ViewChallenges}}
+\doxysubsubsection{\texorpdfstring{displayChallengeData()}{displayChallengeData()}}
+{\footnotesize\ttfamily void View\+Challenges.\+display\+Challenge\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Notify method called when Challenge Mode Worlds for the \mbox{\hyperlink{class_user}{User}} have been retrieved Displays the name and access code of each \mbox{\hyperlink{class_world}{World}} in a list 
+
+\mbox{\Hypertarget{class_view_challenges_a1fad9e912fdafa993709dda1d178a1d5}\label{class_view_challenges_a1fad9e912fdafa993709dda1d178a1d5}} 
+\index{ViewChallenges@{ViewChallenges}!EditChallenge@{EditChallenge}}
+\index{EditChallenge@{EditChallenge}!ViewChallenges@{ViewChallenges}}
+\doxysubsubsection{\texorpdfstring{EditChallenge()}{EditChallenge()}}
+{\footnotesize\ttfamily void View\+Challenges.\+Edit\+Challenge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Called when the edit button is clicked Changes scene to \mbox{\hyperlink{class_question_interface}{Question\+Interface}} to edit questions 
+
+\mbox{\Hypertarget{class_view_challenges_afbe8846409200f385483874d244ac9fd}\label{class_view_challenges_afbe8846409200f385483874d244ac9fd}} 
+\index{ViewChallenges@{ViewChallenges}!getQnNotify@{getQnNotify}}
+\index{getQnNotify@{getQnNotify}!ViewChallenges@{ViewChallenges}}
+\doxysubsubsection{\texorpdfstring{getQnNotify()}{getQnNotify()}}
+{\footnotesize\ttfamily void View\+Challenges.\+get\+Qn\+Notify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Notify method called when question request has been processed 
+
+\mbox{\Hypertarget{class_view_challenges_abf7352934b0947d158791b00228de72e}\label{class_view_challenges_abf7352934b0947d158791b00228de72e}} 
+\index{ViewChallenges@{ViewChallenges}!retrieveSelectedWorld@{retrieveSelectedWorld}}
+\index{retrieveSelectedWorld@{retrieveSelectedWorld}!ViewChallenges@{ViewChallenges}}
+\doxysubsubsection{\texorpdfstring{retrieveSelectedWorld()}{retrieveSelectedWorld()}}
+{\footnotesize\ttfamily void View\+Challenges.\+retrieve\+Selected\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Called when edtiting or deleting a \mbox{\hyperlink{class_world}{World}} Retrieves the selected world for editing/deleting based on chosen world in Challenge Panel. Updates Custom\+World attribute in Current\+User\textquotesingle{}s static class Edit Data. 
+
+\mbox{\Hypertarget{class_view_challenges_a5c111c094e9e5e678a07f26a60be56d1}\label{class_view_challenges_a5c111c094e9e5e678a07f26a60be56d1}} 
+\index{ViewChallenges@{ViewChallenges}!ShareChallenge@{ShareChallenge}}
+\index{ShareChallenge@{ShareChallenge}!ViewChallenges@{ViewChallenges}}
+\doxysubsubsection{\texorpdfstring{ShareChallenge()}{ShareChallenge()}}
+{\footnotesize\ttfamily void View\+Challenges.\+Share\+Challenge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Called when the Share button is clicked Allows the Student to share their \mbox{\hyperlink{class_result}{Result}} on Facebook or Twitter 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+sts/\+Slay The Software -\/ Final/\+Assets/\+Scripts/\+Challenge\+Mode\+Scripts/View\+Challenges.\+cs\end{DoxyCompactItemize}

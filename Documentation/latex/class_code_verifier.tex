@@ -1,0 +1,77 @@
+\hypertarget{class_code_verifier}{}\doxysection{Code\+Verifier Class Reference}
+\label{class_code_verifier}\index{CodeVerifier@{CodeVerifier}}
+
+
+Script for verifying assignment or challenge mode codes  
+
+
+
+
+Inherits Mono\+Behaviour.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_code_verifier_a432d768d769e8e0aba06a267ec34b463}{Verify}} (string type)
+\begin{DoxyCompactList}\small\item\em Sends a request to the server to verify a \mbox{\hyperlink{class_world}{World}} access code \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_code_verifier_a342c4c1eeb39bd0c4b4eb1dab8982eab}{custom\+World\+Notify}} ()
+\begin{DoxyCompactList}\small\item\em Notify method called when an access code request has been processed if successful, sends a request to the server to retrieve Student\textquotesingle{}s current position in that \mbox{\hyperlink{class_world}{World}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_code_verifier_a88cd2430941630061fe127b6833a8af6}{position\+Notify}} ()
+\begin{DoxyCompactList}\small\item\em Notiify method called when the Student\textquotesingle{}s poition has been retrieved Loads the Leve\+Map scene \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_code_verifier_ad6be9c30d2feb2ec7783484879719021}\label{class_code_verifier_ad6be9c30d2feb2ec7783484879719021}} 
+Input\+Field {\bfseries code\+Input}
+\item 
+\mbox{\Hypertarget{class_code_verifier_a049a396b7deb4f23c2df273a3c90ee5b}\label{class_code_verifier_a049a396b7deb4f23c2df273a3c90ee5b}} 
+Game\+Object {\bfseries invalid\+Prompt}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Script for verifying assignment or challenge mode codes 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_code_verifier_a342c4c1eeb39bd0c4b4eb1dab8982eab}\label{class_code_verifier_a342c4c1eeb39bd0c4b4eb1dab8982eab}} 
+\index{CodeVerifier@{CodeVerifier}!customWorldNotify@{customWorldNotify}}
+\index{customWorldNotify@{customWorldNotify}!CodeVerifier@{CodeVerifier}}
+\doxysubsubsection{\texorpdfstring{customWorldNotify()}{customWorldNotify()}}
+{\footnotesize\ttfamily void Code\+Verifier.\+custom\+World\+Notify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Notify method called when an access code request has been processed if successful, sends a request to the server to retrieve Student\textquotesingle{}s current position in that \mbox{\hyperlink{class_world}{World}} 
+
+\mbox{\Hypertarget{class_code_verifier_a88cd2430941630061fe127b6833a8af6}\label{class_code_verifier_a88cd2430941630061fe127b6833a8af6}} 
+\index{CodeVerifier@{CodeVerifier}!positionNotify@{positionNotify}}
+\index{positionNotify@{positionNotify}!CodeVerifier@{CodeVerifier}}
+\doxysubsubsection{\texorpdfstring{positionNotify()}{positionNotify()}}
+{\footnotesize\ttfamily void Code\+Verifier.\+position\+Notify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Notiify method called when the Student\textquotesingle{}s poition has been retrieved Loads the Leve\+Map scene 
+
+\mbox{\Hypertarget{class_code_verifier_a432d768d769e8e0aba06a267ec34b463}\label{class_code_verifier_a432d768d769e8e0aba06a267ec34b463}} 
+\index{CodeVerifier@{CodeVerifier}!Verify@{Verify}}
+\index{Verify@{Verify}!CodeVerifier@{CodeVerifier}}
+\doxysubsubsection{\texorpdfstring{Verify()}{Verify()}}
+{\footnotesize\ttfamily void Code\+Verifier.\+Verify (\begin{DoxyParamCaption}\item[{string}]{type }\end{DoxyParamCaption})}
+
+
+
+Sends a request to the server to verify a \mbox{\hyperlink{class_world}{World}} access code 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & can be \char`\"{}assignment\char`\"{} or \char`\"{}challenge\char`\"{} -\/ Only worlds access codes matching this type will be checked\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+sts/\+Slay The Software -\/ Final/\+Assets/\+Scripts/\+Challenge\+Mode\+Scripts/Code\+Verifier.\+cs\end{DoxyCompactItemize}

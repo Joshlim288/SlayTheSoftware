@@ -1,0 +1,114 @@
+\hypertarget{class_map_1_1_map_view}{}\doxysection{Map.\+Map\+View Class Reference}
+\label{class_map_1_1_map_view}\index{Map.MapView@{Map.MapView}}
+
+
+MODIFIED Handles the rendering and displaying of the Level\+Map  
+
+
+
+
+Inherits Mono\+Behaviour.
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_map_1_1_map_view_a6c4dd3c21c04c699ab7df6f95cf71a24}\label{class_map_1_1_map_view_a6c4dd3c21c04c699ab7df6f95cf71a24}} 
+enum class {\bfseries Map\+Orientation} \{ {\bfseries Bottom\+To\+Top}
+, {\bfseries Top\+To\+Bottom}
+, {\bfseries Right\+To\+Left}
+, {\bfseries Left\+To\+Right}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_map_1_1_map_view_a8939a6c88a22018dda5ca8328eb70cc7}\label{class_map_1_1_map_view_a8939a6c88a22018dda5ca8328eb70cc7}} 
+void {\bfseries Show\+Map} (\mbox{\hyperlink{class_map_1_1_map}{Map}} m)
+\item 
+\mbox{\Hypertarget{class_map_1_1_map_view_ac751821d2831d475f3c0e22cc4b3d9e3}\label{class_map_1_1_map_view_ac751821d2831d475f3c0e22cc4b3d9e3}} 
+void {\bfseries Set\+Attainable\+Nodes} ()
+\item 
+\mbox{\Hypertarget{class_map_1_1_map_view_a6aef9abe7666960f416e30635557f1a5}\label{class_map_1_1_map_view_a6aef9abe7666960f416e30635557f1a5}} 
+void {\bfseries Set\+Line\+Colors} ()
+\item 
+\mbox{\Hypertarget{class_map_1_1_map_view_a2a1de1aab16c13c26bddeeb0b49ea219}\label{class_map_1_1_map_view_a2a1de1aab16c13c26bddeeb0b49ea219}} 
+void {\bfseries Add\+Line\+Connection} (\mbox{\hyperlink{class_map_1_1_map_node}{Map\+Node}} from, \mbox{\hyperlink{class_map_1_1_map_node}{Map\+Node}} to)
+\item 
+\mbox{\Hypertarget{class_map_1_1_map_view_a6890372c007ed1ab0eb7cd0b6f450ae4}\label{class_map_1_1_map_view_a6890372c007ed1ab0eb7cd0b6f450ae4}} 
+\mbox{\hyperlink{class_map_1_1_node_blueprint}{Node\+Blueprint}} {\bfseries Get\+Blueprint} (Node\+Type type)
+\item 
+\mbox{\Hypertarget{class_map_1_1_map_view_a271867055ebac8830e6f7eebcec7e473}\label{class_map_1_1_map_view_a271867055ebac8830e6f7eebcec7e473}} 
+\mbox{\hyperlink{class_map_1_1_node_blueprint}{Node\+Blueprint}} {\bfseries Get\+Blueprint} (string blueprint\+Name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_map_1_1_map_view_affe3d8e1dc239012bae59e85172a5929}\label{class_map_1_1_map_view_affe3d8e1dc239012bae59e85172a5929}} 
+\mbox{\hyperlink{class_map_1_1_map_manager}{Map\+Manager}} {\bfseries map\+Manager}
+\item 
+\mbox{\Hypertarget{class_map_1_1_map_view_a3f83acd04c8b4cb555c84f750baea48b}\label{class_map_1_1_map_view_a3f83acd04c8b4cb555c84f750baea48b}} 
+Map\+Orientation {\bfseries orientation}
+\item 
+\mbox{\Hypertarget{class_map_1_1_map_view_a827259e7efe99dfcf9239801221542c1}\label{class_map_1_1_map_view_a827259e7efe99dfcf9239801221542c1}} 
+List$<$ \mbox{\hyperlink{class_map_1_1_map_config}{Map\+Config}} $>$ {\bfseries all\+Map\+Configs}
+\item 
+\mbox{\Hypertarget{class_map_1_1_map_view_a6a8e570c140b155a987c2b981dced222}\label{class_map_1_1_map_view_a6a8e570c140b155a987c2b981dced222}} 
+Game\+Object {\bfseries node\+Prefab}
+\item 
+\mbox{\Hypertarget{class_map_1_1_map_view_a848123c424a7eea781af7cb8122ab448}\label{class_map_1_1_map_view_a848123c424a7eea781af7cb8122ab448}} 
+float {\bfseries orientation\+Offset}
+\item 
+\mbox{\Hypertarget{class_map_1_1_map_view_a1bbd830f2dbae137285a2eaf162a771d}\label{class_map_1_1_map_view_a1bbd830f2dbae137285a2eaf162a771d}} 
+Sprite {\bfseries background}
+\item 
+\mbox{\Hypertarget{class_map_1_1_map_view_a80419dda8ddd7454a9c565050696f321}\label{class_map_1_1_map_view_a80419dda8ddd7454a9c565050696f321}} 
+Color32 {\bfseries background\+Color} = Color.\+white
+\item 
+\mbox{\Hypertarget{class_map_1_1_map_view_a8edc76d8198f8c708e64cf77846272a6}\label{class_map_1_1_map_view_a8edc76d8198f8c708e64cf77846272a6}} 
+float {\bfseries x\+Size}
+\item 
+\mbox{\Hypertarget{class_map_1_1_map_view_a38be0886aa605baca67f1da934e62d68}\label{class_map_1_1_map_view_a38be0886aa605baca67f1da934e62d68}} 
+float {\bfseries y\+Offset}
+\item 
+\mbox{\Hypertarget{class_map_1_1_map_view_ad44e4eaab4804310cf164f53338bf238}\label{class_map_1_1_map_view_ad44e4eaab4804310cf164f53338bf238}} 
+Game\+Object {\bfseries line\+Prefab}
+\item 
+\mbox{\Hypertarget{class_map_1_1_map_view_a5c635a34a7b4b9c8477ce5b308e8a99c}\label{class_map_1_1_map_view_a5c635a34a7b4b9c8477ce5b308e8a99c}} 
+int {\bfseries line\+Points\+Count} = 10
+\item 
+\mbox{\Hypertarget{class_map_1_1_map_view_a659c93285762bdacf9b205aa35aca020}\label{class_map_1_1_map_view_a659c93285762bdacf9b205aa35aca020}} 
+float {\bfseries offset\+From\+Nodes} = 0.\+5f
+\item 
+\mbox{\Hypertarget{class_map_1_1_map_view_a0726ed6ab0b6eb2a8e3a68aa978cd92c}\label{class_map_1_1_map_view_a0726ed6ab0b6eb2a8e3a68aa978cd92c}} 
+Color32 {\bfseries visited\+Color} = Color.\+white
+\item 
+\mbox{\Hypertarget{class_map_1_1_map_view_ac38aaa8407fdf0a0610d2d8641fa3e8e}\label{class_map_1_1_map_view_ac38aaa8407fdf0a0610d2d8641fa3e8e}} 
+Color32 {\bfseries locked\+Color} = Color.\+gray
+\item 
+\mbox{\Hypertarget{class_map_1_1_map_view_a812f054d94ce35e554c71b82d4ef785f}\label{class_map_1_1_map_view_a812f054d94ce35e554c71b82d4ef785f}} 
+Color32 {\bfseries line\+Visited\+Color} = Color.\+white
+\item 
+\mbox{\Hypertarget{class_map_1_1_map_view_afedfeba7f86a50759da5983cd251f880}\label{class_map_1_1_map_view_afedfeba7f86a50759da5983cd251f880}} 
+Color32 {\bfseries line\+Locked\+Color} = Color.\+gray
+\item 
+\mbox{\Hypertarget{class_map_1_1_map_view_a36c6cab303bdc7dfd2de1a05043914be}\label{class_map_1_1_map_view_a36c6cab303bdc7dfd2de1a05043914be}} 
+readonly List$<$ \mbox{\hyperlink{class_map_1_1_map_node}{Map\+Node}} $>$ {\bfseries Map\+Nodes} = new List$<$\mbox{\hyperlink{class_map_1_1_map_node}{Map\+Node}}$>$()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_map_1_1_map_view_a727a2629e723e5f62bf7a8cdc86e2323}\label{class_map_1_1_map_view_a727a2629e723e5f62bf7a8cdc86e2323}} 
+static \mbox{\hyperlink{class_map_1_1_map_view}{Map\+View}} {\bfseries Instance}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+MODIFIED Handles the rendering and displaying of the Level\+Map 
+
+Reused Component originally created by Vladimir Limarchenko (Silverua) on Github Source Code\+: \href{https://github.com/silverua/slay-the-spire-map-in-unity}{\texttt{ https\+://github.\+com/silverua/slay-\/the-\/spire-\/map-\/in-\/unity}}
+
+Author has allowed free reuse and modification as stated in the License This file has largely remained as is, with any modifications demarcated with MODIFICATION comments
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+sts/\+Slay The Software -\/ Final/\+Assets/\+Scripts/\+Level\+Map\+Scripts/Map\+View.\+cs\end{DoxyCompactItemize}

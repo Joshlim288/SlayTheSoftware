@@ -1,0 +1,171 @@
+\hypertarget{class_question_interface}{}\doxysection{Question\+Interface Class Reference}
+\label{class_question_interface}\index{QuestionInterface@{QuestionInterface}}
+
+
+Script to handle the management of Questions in Create\+Challenge scene  
+
+
+
+
+Inherits Mono\+Behaviour.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_question_interface_ada1da6e2a28e93a8b984060d77bcfe0f}{get\+Questions\+Notify}} ()
+\begin{DoxyCompactList}\small\item\em Notify method called when Challenge Mode \mbox{\hyperlink{class_world}{World}} questions have been retrieved \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_question_interface_adfd3d5c5b03def28a9f80d3669d16174}{fill\+Input\+Fields}} ()
+\begin{DoxyCompactList}\small\item\em Used to populate input fields with question data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_question_interface_ab3cad383a852d4242555225559e794a3}{save\+To\+Question\+List}} ()
+\begin{DoxyCompactList}\small\item\em To update the questions after moving to another question in the interface \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_question_interface_ab78e6146f2b587acaa57655da0ba2039}{next\+Question}} ()
+\begin{DoxyCompactList}\small\item\em Called when user moves to the next question Saves current question details and fetch the next question details Increments and updates question counter at bottom of scene \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_question_interface_a642e025bf8752154ceb9a5932aa52b05}{previous\+Question}} ()
+\begin{DoxyCompactList}\small\item\em Called when user moves to the previous question Saves current question details and fetch the previous question details Decrements and updates question counter at bottom of scene \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_question_interface_a7b747b9906bcf4a7c6d20006f63fffdb}{recursive\+Submit}} ()
+\begin{DoxyCompactList}\small\item\em Used to submit or update edited questions to the server \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_question_interface_a7268d6edeaea62dacdd7622d9a446d01}{recursive\+Notify}} ()
+\begin{DoxyCompactList}\small\item\em Notify method called when create or update question request has been processed \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_question_interface_aec5e437546d772140e81cf1684ad67dc}{create\+World\+Notify}} ()
+\begin{DoxyCompactList}\small\item\em Notify method called when the request to create a \mbox{\hyperlink{class_world}{World}} has been processed \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_question_interface_a8381566bbacffe70b3f2f1ab9f8bd3ae}{submit\+Questions}} ()
+\begin{DoxyCompactList}\small\item\em Submits questions to server \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_question_interface_a1d31189b10f9315027527f2614bf4ed4}{check\+If\+Valid}} ()
+\begin{DoxyCompactList}\small\item\em Basic check to ensure that all fields have been filled in before sending to backend Each question should only have one correct option as well \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_question_interface_a097b5b3c8ff56b05fe2d3a5ce2508c6b}\label{class_question_interface_a097b5b3c8ff56b05fe2d3a5ce2508c6b}} 
+Transform {\bfseries main\+Canvas}
+\item 
+\mbox{\Hypertarget{class_question_interface_a7b2418bff934f3fb3cba1aa7d7af6f09}\label{class_question_interface_a7b2418bff934f3fb3cba1aa7d7af6f09}} 
+Button {\bfseries back\+Button}
+\item 
+\mbox{\Hypertarget{class_question_interface_ae2002fbfca7c7087a36cf2ab143e5c4a}\label{class_question_interface_ae2002fbfca7c7087a36cf2ab143e5c4a}} 
+Text\+Mesh\+Pro\+UGUI {\bfseries question\+Count\+Text}
+\item 
+\mbox{\Hypertarget{class_question_interface_a8a04931d1ef5a4e352fb23228e50adff}\label{class_question_interface_a8a04931d1ef5a4e352fb23228e50adff}} 
+Input\+Field {\bfseries question\+Statement}
+\item 
+\mbox{\Hypertarget{class_question_interface_a054887ff5d3aa0b3973978bd70ca8aa8}\label{class_question_interface_a054887ff5d3aa0b3973978bd70ca8aa8}} 
+Input\+Field\mbox{[}$\,$\mbox{]} {\bfseries answer\+List}
+\item 
+\mbox{\Hypertarget{class_question_interface_a2ae00e8be662ff369cf80daac96c492c}\label{class_question_interface_a2ae00e8be662ff369cf80daac96c492c}} 
+Toggle\mbox{[}$\,$\mbox{]} {\bfseries toggle\+List}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Script to handle the management of Questions in Create\+Challenge scene 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_question_interface_a1d31189b10f9315027527f2614bf4ed4}\label{class_question_interface_a1d31189b10f9315027527f2614bf4ed4}} 
+\index{QuestionInterface@{QuestionInterface}!checkIfValid@{checkIfValid}}
+\index{checkIfValid@{checkIfValid}!QuestionInterface@{QuestionInterface}}
+\doxysubsubsection{\texorpdfstring{checkIfValid()}{checkIfValid()}}
+{\footnotesize\ttfamily bool Question\+Interface.\+check\+If\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Basic check to ensure that all fields have been filled in before sending to backend Each question should only have one correct option as well 
+
+\begin{DoxyReturn}{Returns}
+boolean variable indicating if all questions are valid
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_question_interface_aec5e437546d772140e81cf1684ad67dc}\label{class_question_interface_aec5e437546d772140e81cf1684ad67dc}} 
+\index{QuestionInterface@{QuestionInterface}!createWorldNotify@{createWorldNotify}}
+\index{createWorldNotify@{createWorldNotify}!QuestionInterface@{QuestionInterface}}
+\doxysubsubsection{\texorpdfstring{createWorldNotify()}{createWorldNotify()}}
+{\footnotesize\ttfamily void Question\+Interface.\+create\+World\+Notify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Notify method called when the request to create a \mbox{\hyperlink{class_world}{World}} has been processed 
+
+\mbox{\Hypertarget{class_question_interface_adfd3d5c5b03def28a9f80d3669d16174}\label{class_question_interface_adfd3d5c5b03def28a9f80d3669d16174}} 
+\index{QuestionInterface@{QuestionInterface}!fillInputFields@{fillInputFields}}
+\index{fillInputFields@{fillInputFields}!QuestionInterface@{QuestionInterface}}
+\doxysubsubsection{\texorpdfstring{fillInputFields()}{fillInputFields()}}
+{\footnotesize\ttfamily void Question\+Interface.\+fill\+Input\+Fields (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Used to populate input fields with question data. 
+
+\mbox{\Hypertarget{class_question_interface_ada1da6e2a28e93a8b984060d77bcfe0f}\label{class_question_interface_ada1da6e2a28e93a8b984060d77bcfe0f}} 
+\index{QuestionInterface@{QuestionInterface}!getQuestionsNotify@{getQuestionsNotify}}
+\index{getQuestionsNotify@{getQuestionsNotify}!QuestionInterface@{QuestionInterface}}
+\doxysubsubsection{\texorpdfstring{getQuestionsNotify()}{getQuestionsNotify()}}
+{\footnotesize\ttfamily void Question\+Interface.\+get\+Questions\+Notify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Notify method called when Challenge Mode \mbox{\hyperlink{class_world}{World}} questions have been retrieved 
+
+\mbox{\Hypertarget{class_question_interface_ab78e6146f2b587acaa57655da0ba2039}\label{class_question_interface_ab78e6146f2b587acaa57655da0ba2039}} 
+\index{QuestionInterface@{QuestionInterface}!nextQuestion@{nextQuestion}}
+\index{nextQuestion@{nextQuestion}!QuestionInterface@{QuestionInterface}}
+\doxysubsubsection{\texorpdfstring{nextQuestion()}{nextQuestion()}}
+{\footnotesize\ttfamily void Question\+Interface.\+next\+Question (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Called when user moves to the next question Saves current question details and fetch the next question details Increments and updates question counter at bottom of scene 
+
+\mbox{\Hypertarget{class_question_interface_a642e025bf8752154ceb9a5932aa52b05}\label{class_question_interface_a642e025bf8752154ceb9a5932aa52b05}} 
+\index{QuestionInterface@{QuestionInterface}!previousQuestion@{previousQuestion}}
+\index{previousQuestion@{previousQuestion}!QuestionInterface@{QuestionInterface}}
+\doxysubsubsection{\texorpdfstring{previousQuestion()}{previousQuestion()}}
+{\footnotesize\ttfamily void Question\+Interface.\+previous\+Question (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Called when user moves to the previous question Saves current question details and fetch the previous question details Decrements and updates question counter at bottom of scene 
+
+\mbox{\Hypertarget{class_question_interface_a7268d6edeaea62dacdd7622d9a446d01}\label{class_question_interface_a7268d6edeaea62dacdd7622d9a446d01}} 
+\index{QuestionInterface@{QuestionInterface}!recursiveNotify@{recursiveNotify}}
+\index{recursiveNotify@{recursiveNotify}!QuestionInterface@{QuestionInterface}}
+\doxysubsubsection{\texorpdfstring{recursiveNotify()}{recursiveNotify()}}
+{\footnotesize\ttfamily void Question\+Interface.\+recursive\+Notify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Notify method called when create or update question request has been processed 
+
+\mbox{\Hypertarget{class_question_interface_a7b747b9906bcf4a7c6d20006f63fffdb}\label{class_question_interface_a7b747b9906bcf4a7c6d20006f63fffdb}} 
+\index{QuestionInterface@{QuestionInterface}!recursiveSubmit@{recursiveSubmit}}
+\index{recursiveSubmit@{recursiveSubmit}!QuestionInterface@{QuestionInterface}}
+\doxysubsubsection{\texorpdfstring{recursiveSubmit()}{recursiveSubmit()}}
+{\footnotesize\ttfamily void Question\+Interface.\+recursive\+Submit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Used to submit or update edited questions to the server 
+
+\mbox{\Hypertarget{class_question_interface_ab3cad383a852d4242555225559e794a3}\label{class_question_interface_ab3cad383a852d4242555225559e794a3}} 
+\index{QuestionInterface@{QuestionInterface}!saveToQuestionList@{saveToQuestionList}}
+\index{saveToQuestionList@{saveToQuestionList}!QuestionInterface@{QuestionInterface}}
+\doxysubsubsection{\texorpdfstring{saveToQuestionList()}{saveToQuestionList()}}
+{\footnotesize\ttfamily void Question\+Interface.\+save\+To\+Question\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+To update the questions after moving to another question in the interface 
+
+\mbox{\Hypertarget{class_question_interface_a8381566bbacffe70b3f2f1ab9f8bd3ae}\label{class_question_interface_a8381566bbacffe70b3f2f1ab9f8bd3ae}} 
+\index{QuestionInterface@{QuestionInterface}!submitQuestions@{submitQuestions}}
+\index{submitQuestions@{submitQuestions}!QuestionInterface@{QuestionInterface}}
+\doxysubsubsection{\texorpdfstring{submitQuestions()}{submitQuestions()}}
+{\footnotesize\ttfamily void Question\+Interface.\+submit\+Questions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Submits questions to server 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+sts/\+Slay The Software -\/ Final/\+Assets/\+Scripts/\+Challenge\+Mode\+Scripts/Question\+Interface.\+cs\end{DoxyCompactItemize}
