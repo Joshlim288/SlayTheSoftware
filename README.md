@@ -30,4 +30,4 @@ Misc files and folders used in the building of the Unity project
 
 
 ### Screenshots
-![Main Screen](https://github.com/Joshlim288/SlayTheSoftware/Screenshots/MainScreen.jpg?raw=true)
+![Main Screen](https://github.com/Joshlim288/SlayTheSoftware/blob/master/Screenshots/MainScreen.png?raw=true)
