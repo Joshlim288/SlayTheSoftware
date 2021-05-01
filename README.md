@@ -35,4 +35,4 @@ Misc files and folders used in the building of the Unity project
 ![World Map](https://github.com/Joshlim288/SlayTheSoftware/blob/master/Screenshots/WorldMap.png?raw=true)
 ![Level Map](https://github.com/Joshlim288/SlayTheSoftware/blob/master/Screenshots/LevelMap.png?raw=true)
 ![Quiz Mode](https://github.com/Joshlim288/SlayTheSoftware/blob/master/Screenshots/QuizMode.png?raw=true)
-![Boss Mode](https://github.com/Joshlim288/SlayTheSoftware/blob/master/Screenshots/BossMode.png?raw=true)
+![Boss Mode](https://github.com/Joshlim288/SlayTheSoftware/blob/master/Screenshots/BossLevel.png?raw=true)
